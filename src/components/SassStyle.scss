@@ -1,0 +1,24 @@
+$background: #0000ff;
+$color: #ffffff;
+
+.tags-area {
+    margin: 0 15px;
+    strong {
+        display: inline-block;
+        margin: 15px 0;
+    }
+    .tags {
+        span {
+            display: inline-block;
+            background-color: $background;
+            color: $color;
+            margin: 3px;
+            padding: 3px 5px;
+            cursor: pointer;
+            &:first-child {
+                margin-left: 0;
+                background-color: red;
+            } 
+        }
+    }
+}
