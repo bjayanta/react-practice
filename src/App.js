@@ -1,16 +1,14 @@
-import './App.css';
-import SingleInput from "./components/SingleInput";
-import MultipleInput from "./components/MultipleInput";
-import Textarea from "./components/Textarea";
-import Select from "./components/Select";
+import { BrowserRouter } from "react-router-dom";
+import AppRoute from "./components/AppRoute";
+import Navigation from "./components/Navigation";
 
 function App() {
   return (
-    <div className="App">
-      <SingleInput></SingleInput>
-      <MultipleInput></MultipleInput>
-      <Textarea></Textarea>
-      <Select></Select>
+    <div>
+      <BrowserRouter>
+        <Navigation />
+        <AppRoute />
+      </BrowserRouter>
     </div>
   );
 }
