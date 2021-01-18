@@ -1,6 +1,8 @@
-# Form elements  
- - Get input field 
- - Get multiple input fields and there value 
- - Event handler in onChange 
- - Event handler in onSubmit 
- - Form validation 
+# Routing 
+ - Basic 
+ - Router Switch
+ - ActiveSltyle, ActiveClassName
+ - Difference between Link & NavLink
+ - Route with URL params 
+ - Redirect 
+ - BrowserRouter vs HashRouter
