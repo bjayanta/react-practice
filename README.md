@@ -11,4 +11,4 @@
     * Example using “JSON Placeholder” 
 
 ### AJAX how it works
-![AJAX working diagram](https://github.com/bjayanta/reactjs/tree/l9/public/ajax.png "AJAX working diagram")
+![AJAX working diagram](https://github.com/bjayanta/reactjs/blob/l9/public/ajax.png?raw=true "AJAX working diagram")
