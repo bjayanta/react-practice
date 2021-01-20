@@ -2,10 +2,10 @@
  - Unpack values from array
  - Unpack properties from object
 
- 
+
 # Hooks
  - What is react hook?
- - Uses roles
+ - Uses rules
  - Hooks
     * Basic hooks
         - useState
