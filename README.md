@@ -1,70 +1,48 @@
-# Getting Started with Create React App
+# React Redux
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+1. Directory structure 
+    - src > services > actions 
+    - src > services > reducers
+    - src > services > types.js
+    - src > services > store.js
 
-## Available Scripts
+2. Work with *type.js*
+    - create global types 
+    - export 
 
-In the project directory, you can run:
+3. Work with *reducer*
+    - create a reducer (counter reducer)
+        - import global **types**
+        - create **initial state**
+        - create a default function which is accept 2 params, state and action respectively 
+        - implement code as per app concern 
+        - finally export 
 
-### `npm start`
+4. Manage multiple *reducer*
+    - create **index.js** 
+    - import all the **reducer** from **reduces** directory and import **combineReducers** from **redux** also
+    - emit all the reducer into **combineReducers** as a object
+    - export the **combineReducers**
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+5. Work with *action*
+    - create action files
+    - import global **types**
+    - create functions as per ur requirment 
+        - every method has a return type which is an object & the object content **type** also 
+    - finally export all ur functions/methods
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+6. Work with *store*
+    - import **createStore** from **redux** & import **root(index.js)** reducer from **reducers** directory 
+    - create an empty **initial state** (object)
+    - create & export a constant named **store** & assign **createStore**
+    - **createStore** support 2 params which is **root reducer** & **initial state** respectively 
 
-### `npm test`
+7. Import *store* & *Provider* into **index.js** (main file) file from *store.js* & *react-redux* respectively
+    - Wrap **master component** (App) component with **Provider**
+    - set an attribute named **store**
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+8. Implement on component
+    - import **methods** & **connect** from **action** & **react-redux** rexpectively
+    - map *state* & *dispatch* to props
+    - implement all the props into **component**
+    
